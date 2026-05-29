@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dolapo Olaosebikan — Business Development & Account Management</title>
+<meta name="description" content="Professional portfolio of Dolapo Temitope Olaosebikan — Business Development Manager, Account Manager & Customer Success Professional with 6+ years at United Bank for Africa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Epilogue:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #0C0F14; --ink2: #1A1F2E; --ink3: #262D3F;
+    --accent: #C8A95B; --accent2: #E2C98A; --accent-pale: #F9F3E6;
+    --white: #FFFFFF; --off: #F7F6F4; --muted: #6B7280; --light: #9CA3AF;
+    --border: rgba(200,169,91,0.18); --border2: rgba(255,255,255,0.08);
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Epilogue', sans-serif; background: var(--off); color: var(--ink); line-height: 1.6; font-size: 15px; }
+
+  nav { background: var(--ink); padding: 0 48px; height: 60px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+  .nav-brand { font-family: 'Playfair Display', serif; font-size: 19px; font-weight: 700; color: var(--white); letter-spacing: 0.02em; }
+  .nav-brand em { color: var(--accent); font-style: normal; }
+  .nav-links { display: flex; gap: 28px; list-style: none; }
+  .nav-links a { font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); text-decoration: none; transition: color .2s; }
+  .nav-links a:hover { color: var(--accent); }
+
+  .hero { background: var(--ink); padding: 80px 48px 0; }
+  .hero-grid { display: grid; grid-template-columns: 1fr 320px; gap: 48px; align-items: end; max-width: 960px; }
+  .hero-eyebrow { display: flex; align-items: center; gap: 10px; margin-bottom: 22px; }
+  .eyebrow-line { width: 32px; height: 1px; background: var(--accent); }
+  .eyebrow-text { font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+  .hero h1 { font-family: 'Playfair Display', serif; font-size: 64px; font-weight: 900; color: var(--white); line-height: 1.0; letter-spacing: -0.02em; margin-bottom: 8px; }
+  .hero h1 span { color: var(--accent); }
+  .hero-sub { font-size: 14px; color: rgba(255,255,255,0.4); font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 28px; }
+  .hero-desc { font-size: 15px; color: rgba(255,255,255,0.6); line-height: 1.85; max-width: 500px; margin-bottom: 36px; }
+  .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn-p { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: var(--ink); padding: 12px 26px; border-radius: 4px; font-size: 13.5px; font-weight: 600; text-decoration: none; letter-spacing: 0.04em; transition: background .2s, transform .15s; }
+  .btn-p:hover { background: var(--accent2); transform: translateY(-1px); }
+  .btn-o { display: inline-flex; align-items: center; gap: 8px; background: transparent; border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.7); padding: 12px 26px; border-radius: 4px; font-size: 13.5px; font-weight: 500; text-decoration: none; letter-spacing: 0.04em; transition: border-color .2s, color .2s; }
+  .btn-o:hover { border-color: var(--accent); color: var(--accent); }
+
+  .avail-card { background: rgba(255,255,255,0.04); border: 1px solid var(--border2); border-radius: 8px; padding: 20px; margin-bottom: 14px; }
+  .avail-dot { display: inline-flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 500; color: #5DCAA5; margin-bottom: 10px; }
+  .dot { width: 7px; height: 7px; background: #5DCAA5; border-radius: 50%; animation: blink 2s infinite; }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+  .avail-card h4 { font-size: 14px; font-weight: 600; color: var(--white); margin-bottom: 6px; }
+  .avail-card p { font-size: 13px; color: rgba(255,255,255,0.45); line-height: 1.6; }
+  .role-pills { display: flex; flex-direction: column; gap: 8px; }
+  .role-pill { background: rgba(255,255,255,0.04); border: 1px solid rgba(200,169,91,0.15); border-radius: 4px; padding: 10px 14px; font-size: 13px; color: rgba(255,255,255,0.65); display: flex; align-items: center; gap: 8px; }
+  .role-pill::before { content: ''; width: 4px; height: 4px; background: var(--accent); border-radius: 50%; flex-shrink: 0; }
+
+  .hero-bar { background: var(--ink); border-top: 1px solid rgba(255,255,255,0.05); margin-top: 48px; padding: 28px 48px; display: grid; grid-template-columns: repeat(5, 1fr); }
+  .hb-item { text-align: center; padding: 0 12px; border-right: 1px solid rgba(255,255,255,0.06); }
+  .hb-item:last-child { border-right: none; }
+  .hb-num { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 700; color: var(--accent); line-height: 1; }
+  .hb-label { font-size: 11px; color: rgba(255,255,255,0.35); letter-spacing: 0.06em; text-transform: uppercase; margin-top: 5px; }
+
+  section { padding: 68px 48px; }
+  .s-alt { background: var(--white); }
+  .s-dark { background: var(--ink); color: var(--white); }
+  .s-off { background: var(--off); }
+
+  .sec-label { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .sec-bar { width: 28px; height: 2px; background: var(--accent); }
+  .sec-tag { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+  h2 { font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 700; color: inherit; letter-spacing: -0.01em; margin-bottom: 36px; }
+  .s-dark h2 { color: var(--white); }
+
+  .about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 52px; align-items: start; }
+  .about-text p { font-size: 15px; color: var(--muted); line-height: 1.85; margin-bottom: 16px; }
+  .value-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+  .vpill { font-size: 12px; font-weight: 500; color: var(--ink2); background: var(--accent-pale); border: 1px solid rgba(200,169,91,0.3); padding: 5px 13px; border-radius: 3px; letter-spacing: 0.02em; }
+  .hcard { background: var(--off); border: 1px solid rgba(200,169,91,0.15); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; padding: 17px 20px; margin-bottom: 13px; }
+  .hcard h4 { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+  .hcard p { font-size: 13.5px; color: var(--muted); line-height: 1.65; }
+
+  .timeline { position: relative; padding-left: 30px; }
+  .timeline::before { content: ''; position: absolute; left: 5px; top: 8px; bottom: 0; width: 1px; background: rgba(200,169,91,0.25); }
+  .titem { position: relative; margin-bottom: 48px; }
+  .titem::before { content: ''; position: absolute; left: -26px; top: 7px; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); border: 2px solid var(--off); box-shadow: 0 0 0 2px var(--accent); }
+  .tmeta { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
+  .tdate { font-size: 11.5px; font-weight: 600; color: var(--accent); background: var(--accent-pale); padding: 3px 10px; border-radius: 3px; letter-spacing: 0.04em; }
+  .torg { font-size: 13px; color: var(--light); }
+  .ttitle { font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 700; color: var(--ink); margin-bottom: 13px; }
+  .tbullets { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .tbullets li { display: flex; gap: 10px; font-size: 14px; color: var(--muted); line-height: 1.65; }
+  .tbullets li::before { content: '→'; color: var(--accent); flex-shrink: 0; font-size: 13px; margin-top: 2px; }
+  .tags-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 13px; }
+  .atag { font-size: 11.5px; font-weight: 500; color: #633806; background: #FAEEDA; border: 1px solid #EF9F27; padding: 3px 10px; border-radius: 3px; }
+
+  .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .skcard { background: var(--ink2); border: 1px solid var(--border2); border-radius: 8px; padding: 24px; }
+  .sk-ico { width: 38px; height: 38px; background: rgba(200,169,91,0.12); border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+  .sk-ico svg { width: 20px; height: 20px; stroke: var(--accent); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .skcard h4 { font-size: 14px; font-weight: 600; color: var(--white); margin-bottom: 12px; }
+  .sk-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .sk-t { font-size: 11.5px; color: rgba(255,255,255,0.45); background: rgba(255,255,255,0.05); padding: 3px 9px; border-radius: 3px; border: 1px solid rgba(255,255,255,0.07); }
+
+  .csr-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .ccard { background: var(--off); border: 1px solid rgba(200,169,91,0.15); border-radius: 8px; padding: 24px; transition: border-color .2s, transform .2s; }
+  .ccard:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .corg { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+  .ccard h4 { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--ink); margin-bottom: 3px; }
+  .cperiod { font-size: 12.5px; color: var(--light); margin-bottom: 11px; }
+  .ccard p { font-size: 13.5px; color: var(--muted); line-height: 1.65; }
+  .ctag { display: inline-block; margin-top: 11px; font-size: 11px; font-weight: 600; color: var(--accent); background: var(--accent-pale); padding: 3px 10px; border-radius: 3px; letter-spacing: 0.04em; }
+
+  .contact-wrap { background: var(--ink2); border-radius: 10px; padding: 52px; display: grid; grid-template-columns: 1fr 1fr; gap: 52px; align-items: center; border: 1px solid var(--border2); }
+  .contact-wrap h2 { font-size: 34px; color: var(--white); margin-bottom: 12px; }
+  .contact-wrap h2 em { color: var(--accent); font-style: normal; }
+  .contact-desc { font-size: 14.5px; color: rgba(255,255,255,0.5); line-height: 1.8; margin-bottom: 30px; }
+  .contact-items { display: flex; flex-direction: column; gap: 14px; }
+  .ci { display: flex; align-items: center; gap: 13px; color: rgba(255,255,255,0.65); font-size: 14px; text-decoration: none; transition: color .2s; }
+  .ci:hover { color: var(--accent); }
+  .ci-icon { width: 36px; height: 36px; background: rgba(200,169,91,0.12); border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .ci-icon svg { width: 16px; height: 16px; stroke: var(--accent); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .edu-block { background: rgba(255,255,255,0.04); border: 1px solid var(--border2); border-radius: 8px; padding: 24px; margin-bottom: 14px; }
+  .edu-block h4 { font-family: 'Playfair Display', serif; font-size: 19px; color: var(--white); margin-bottom: 4px; }
+  .edu-block p { font-size: 13px; color: rgba(255,255,255,0.45); margin-bottom: 13px; }
+  .edu-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+  .etag { font-size: 11.5px; font-weight: 500; color: var(--accent); background: rgba(200,169,91,0.1); border: 1px solid rgba(200,169,91,0.2); padding: 4px 10px; border-radius: 3px; }
+  .seek-block { background: rgba(255,255,255,0.03); border: 1px solid var(--border2); border-radius: 8px; padding: 20px; }
+  .seek-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+  .seek-pills { display: flex; flex-wrap: wrap; gap: 7px; }
+  .sp { font-size: 12.5px; color: rgba(255,255,255,0.55); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); padding: 5px 12px; border-radius: 3px; }
+
+  footer { background: var(--ink); padding: 24px 48px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(255,255,255,0.05); }
+  footer p { font-size: 13px; color: rgba(255,255,255,0.25); }
+  footer span { color: var(--accent); }
+  .footer-links { display: flex; gap: 20px; }
+  .footer-links a { font-size: 12px; color: rgba(255,255,255,0.3); text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase; transition: color .2s; }
+  .footer-links a:hover { color: var(--accent); }
+
+  @media (max-width: 768px) {
+    nav { padding: 0 20px; }
+    .nav-links { display: none; }
+    .hero { padding: 52px 20px 0; }
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 42px; }
+    .hero-bar { padding: 20px; grid-template-columns: repeat(3,1fr); }
+    .hb-item:nth-child(4),.hb-item:nth-child(5) { border-top: 1px solid rgba(255,255,255,0.06); border-right: none; }
+    section { padding: 48px 20px; }
+    .about-grid, .skills-grid, .csr-grid, .contact-wrap { grid-template-columns: 1fr; }
+    .contact-wrap { padding: 32px 24px; }
+    footer { flex-direction: column; gap: 12px; text-align: center; padding: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">Dolapo <em>Olaosebikan</em></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#impact">Impact</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">Open to Remote Opportunities — GMT+1</span>
+      </div>
+      <h1>Dolapo<br><span>Temitope</span><br>Olaosebikan</h1>
+      <p class="hero-sub">Business Development · Account Management · Customer Success</p>
+      <p class="hero-desc">First-class graduate and seasoned professional with 6+ years driving client retention, revenue growth, and operational excellence at a pan-African financial institution — ready to scale your business worldwide.</p>
+      <div class="hero-cta">
+        <a href="mailto:adedolapo.olaosebikan@gmail.com" class="btn-p">
+          <svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          Get in Touch
+        </a>
+        <a href="https://www.linkedin.com/in/dolapo-olaosebikan-51519a121" target="_blank" class="btn-o">
+          <svg viewBox="0 0 24 24" style="width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn Profile
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="avail-card">
+        <div class="avail-dot"><span class="dot"></span> Available Now</div>
+        <h4>Seeking Remote Roles</h4>
+        <p>Fluent English · Lagos, Nigeria · GMT+1 · Fully Remote Ready</p>
+      </div>
+      <div class="role-pills">
+        <div class="role-pill">Business Development Manager</div>
+        <div class="role-pill">Account Manager</div>
+        <div class="role-pill">Customer Success Manager</div>
+        <div class="role-pill">Client Relationship Manager</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-bar">
+    <div class="hb-item"><div class="hb-num">6+</div><div class="hb-label">Years Experience</div></div>
+    <div class="hb-item"><div class="hb-num">1K+</div><div class="hb-label">Accounts Managed</div></div>
+    <div class="hb-item"><div class="hb-num">86%</div><div class="hb-label">Retention Lift</div></div>
+    <div class="hb-item"><div class="hb-num">65%</div><div class="hb-label">Sales Growth</div></div>
+    <div class="hb-item"><div class="hb-num">1K+</div><div class="hb-label">CSR Lives Reached</div></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="s-alt">
+  <div class="sec-label"><span class="sec-bar"></span><span class="sec-tag">About</span></div>
+  <h2>Driven by people.<br>Measured by results.</h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I'm a customer-obsessed business professional with over six years of hands-on experience managing complex client portfolios, leading cross-functional collaboration, and delivering measurable growth at United Bank for Africa — one of Africa's largest financial institutions.</p>
+      <p>Armed with a First-Class degree in Sociology, I bring a uniquely human lens to every business challenge: understanding people, anticipating needs, and building relationships that translate directly into revenue and retention.</p>
+      <p>Beyond the boardroom, I'm a passionate advocate for social responsibility — with a track record of coordinating youth empowerment, anti-trafficking awareness, and sustainable development initiatives across Nigeria.</p>
+      <div class="value-row">
+        <span class="vpill">Client-Centric</span>
+        <span class="vpill">Strategically Minded</span>
+        <span class="vpill">Impact-Driven</span>
+        <span class="vpill">Remote-Ready</span>
+        <span class="vpill">AI-Augmented</span>
+        <span class="vpill">Socially Responsible</span>
+      </div>
+    </div>
+    <div>
+      <div class="hcard"><h4>Business Development</h4><p>Scaled territory growth through strategic outreach and structured follow-up systems — boosting team sales performance by 65%.</p></div>
+      <div class="hcard"><h4>Account & Relationship Management</h4><p>Owned the full client lifecycle for 1,000+ accounts, driving an 86% improvement in customer retention consistently.</p></div>
+      <div class="hcard"><h4>Customer Success</h4><p>Proactively identified at-risk accounts, built personalised communication frameworks, and improved team efficiency at scale.</p></div>
+      <div class="hcard"><h4>Social Impact Leadership</h4><p>Led CSR programmes reaching 1,000+ youth across Nigeria in civic leadership, anti-trafficking, and SDG initiatives.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="s-off">
+  <div class="sec-label"><span class="sec-bar"></span><span class="sec-tag">Experience</span></div>
+  <h2>Where expertise meets impact.</h2>
+  <div class="timeline">
+    <div class="titem">
+      <div class="tmeta">
+        <span class="tdate">Feb 2019 – Sept 2025</span>
+        <span class="torg">United Bank for Africa (UBA) · Lagos, Nigeria</span>
+      </div>
+      <div class="ttitle">Business Development Manager & Account Manager</div>
+      <ul class="tbullets">
+        <li>Owned the full client lifecycle for a portfolio of 1,000+ national business and retail accounts — from onboarding and setup through engagement, issue resolution, and retention.</li>
+        <li>Drove an 86% improvement in customer retention through proactive check-ins, at-risk account identification, and personalised retention strategies within agreed SLAs.</li>
+        <li>Boosted team sales performance by 65% by designing a structured outreach and follow-up system adopted team-wide.</li>
+        <li>Identified upsell and cross-sell opportunities through regular client interactions, recommending tailored service packages aligned to individual account needs.</li>
+        <li>Built performance dashboards, client insight summaries, and operational reports for senior leadership to inform strategic decisions.</li>
+        <li>Developed SOPs and reusable communication templates improving team-wide consistency and onboarding efficiency.</li>
+        <li>Leveraged AI tools — including Claude and ChatGPT — to streamline client research, summarise data, and scale output without sacrificing quality.</li>
+        <li>Coordinated cross-functionally with compliance, operations, and service teams to ensure seamless account management and issue resolution.</li>
+      </ul>
+      <div class="tags-row">
+        <span class="atag">86% Retention Uplift</span>
+        <span class="atag">65% Sales Growth</span>
+        <span class="atag">1,000+ Accounts</span>
+      </div>
+    </div>
+    <div class="titem">
+      <div class="tmeta">
+        <span class="tdate">Aug 2016 – Sept 2018</span>
+        <span class="torg">LEAP Africa · Lagos, Nigeria</span>
+      </div>
+      <div class="ttitle">Data Analyst & Project Supervisor</div>
+      <ul class="tbullets">
+        <li>Coordinated a national youth development programme for 1,000+ participants, managing scheduling, logistics, and stakeholder communication across multiple locations.</li>
+        <li>Maintained programme databases with high accuracy, ensuring reliable data for reporting and strategic decision-making.</li>
+        <li>Documented workflows and best practices supporting team-wide adoption and replication across future project cycles.</li>
+      </ul>
+      <div class="tags-row"><span class="atag">1,000+ Youth Reached</span></div>
+    </div>
+    <div class="titem">
+      <div class="tmeta">
+        <span class="tdate">Oct 2016 – Nov 2017</span>
+        <span class="torg">University of Benin · Benin City, Nigeria</span>
+      </div>
+      <div class="ttitle">Administrative Assistant — Sociology & Anthropology</div>
+      <ul class="tbullets">
+        <li>Managed administrative workflows, records, and information distribution across departments with a 95% accuracy and on-time delivery rate.</li>
+        <li>Developed an information dissemination system that improved communication speed and reliability across faculties.</li>
+      </ul>
+      <div class="tags-row"><span class="atag">95% Accuracy Rate</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="s-dark">
+  <div class="sec-label"><span class="sec-bar"></span><span class="sec-tag">Skills & Tools</span></div>
+  <h2>Built to deliver.<br>Equipped to scale.</h2>
+  <div class="skills-grid">
+    <div class="skcard">
+      <div class="sk-ico">
+        <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      </div>
+      <h4>Business Development</h4>
+      <div class="sk-tags">
+        <span class="sk-t">Territory Growth</span><span class="sk-t">Client Acquisition</span><span class="sk-t">Outbound Outreach</span><span class="sk-t">Pipeline Management</span><span class="sk-t">Market Research</span>
+      </div>
+    </div>
+    <div class="skcard">
+      <div class="sk-ico">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <h4>Account & Client Management</h4>
+      <div class="sk-tags">
+        <span class="sk-t">Portfolio Management</span><span class="sk-t">CRM Systems</span><span class="sk-t">Client Onboarding</span><span class="sk-t">Retention Strategy</span><span class="sk-t">Upsell & Cross-sell</span>
+      </div>
+    </div>
+    <div class="skcard">
+      <div class="sk-ico">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 12.77a19.79 19.79 0 01-3.07-8.67A2 2 0 011.91 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      </div>
+      <h4>Customer Success</h4>
+      <div class="sk-tags">
+        <span class="sk-t">High-Volume Support</span><span class="sk-t">SLA Management</span><span class="sk-t">Issue Resolution</span><span class="sk-t">CSAT</span><span class="sk-t">Stakeholder Comms</span>
+      </div>
+    </div>
+    <div class="skcard">
+      <div class="sk-ico">
+        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      </div>
+      <h4>Operations & Reporting</h4>
+      <div class="sk-tags">
+        <span class="sk-t">SOP Development</span><span class="sk-t">Performance Dashboards</span><span class="sk-t">Process Documentation</span><span class="sk-t">Record Management</span>
+      </div>
+    </div>
+    <div class="skcard">
+      <div class="sk-ico">
+        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      </div>
+      <h4>Tools & Platforms</h4>
+      <div class="sk-tags">
+        <span class="sk-t">Microsoft 365</span><span class="sk-t">Excel</span><span class="sk-t">Google Workspace</span><span class="sk-t">Notion</span><span class="sk-t">Canva</span><span class="sk-t">Slack</span><span class="sk-t">Zoom/Teams</span>
+      </div>
+    </div>
+    <div class="skcard">
+      <div class="sk-ico">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+      </div>
+      <h4>AI & Automation</h4>
+      <div class="sk-tags">
+        <span class="sk-t">Claude AI</span><span class="sk-t">ChatGPT</span><span class="sk-t">AI-Powered Research</span><span class="sk-t">Workflow Automation</span><span class="sk-t">Prompt Engineering</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL IMPACT -->
+<section id="impact" class="s-alt">
+  <div class="sec-label"><span class="sec-bar"></span><span class="sec-tag">Social Impact</span></div>
+  <h2>Purpose beyond profession.</h2>
+  <p style="color:var(--muted);max-width:580px;margin-bottom:36px;font-size:15px;line-height:1.8">Deeply committed to social responsibility — with years dedicated to youth empowerment, human rights advocacy, and sustainable community development across Nigeria.</p>
+  <div class="csr-grid">
+    <div class="ccard">
+      <div class="corg">LEAP Africa</div>
+      <h4>iLEAD Project Manager</h4>
+      <div class="cperiod">2016 – 2017 · Lagos, Nigeria</div>
+      <p>Coordinated youth leadership and social impact initiatives reaching 1,000+ participants. Facilitated sessions on civic responsibility, critical thinking, and community problem-solving while developing structured educational content.</p>
+      <span class="ctag">Youth Empowerment</span>
+    </div>
+    <div class="ccard">
+      <div class="corg">NAPTIP</div>
+      <h4>Community Outreach Volunteer</h4>
+      <div class="cperiod">2017 · Lagos, Nigeria</div>
+      <p>Supported awareness campaigns on human trafficking and domestic abuse. Engaged communities through sensitization activities and helped develop culturally sensitive materials promoting social protection awareness.</p>
+      <span class="ctag">Human Rights Advocacy</span>
+    </div>
+    <div class="ccard">
+      <div class="corg">Social Good Lagos</div>
+      <h4>SDG Programme Coordinator</h4>
+      <div class="cperiod">2018 – 2019 · Lagos, Nigeria</div>
+      <p>Supported SDG-focused community programmes centred on youth development. Conducted community-level research, developed awareness materials, and coordinated stakeholder engagement with youth and local actors.</p>
+      <span class="ctag">Sustainable Development</span>
+    </div>
+    <div class="ccard">
+      <div class="corg">Hope Foundation</div>
+      <h4>Assistant Trainer (Volunteer)</h4>
+      <div class="cperiod">August 2015 · Nigeria</div>
+      <p>Facilitated youth empowerment and leadership development sessions. Supported participant engagement through interactive mentorship activities and assisted with training coordination and documentation.</p>
+      <span class="ctag">Leadership Development</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="s-off">
+  <div class="contact-wrap">
+    <div>
+      <div class="sec-label" style="margin-bottom:10px"><span class="sec-bar"></span><span class="sec-tag">Contact</span></div>
+      <h2>Let's build something <em>meaningful</em> together.</h2>
+      <p class="contact-desc">Open to remote opportunities in Business Development, Account Management, Customer Success, and Relationship Management. Let's connect.</p>
+      <div class="contact-items">
+        <a href="mailto:adedolapo.olaosebikan@gmail.com" class="ci">
+          <span class="ci-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg></span>
+          adedolapo.olaosebikan@gmail.com
+        </a>
+        <a href="tel:+2347068096265" class="ci">
+          <span class="ci-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 12.77a19.79 19.79 0 01-3.07-8.67A2 2 0 011.91 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></span>
+          +234 706 809 6265
+        </a>
+        <a href="https://www.linkedin.com/in/dolapo-olaosebikan-51519a121" target="_blank" class="ci">
+          <span class="ci-icon"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span>
+          linkedin.com/in/dolapo-olaosebikan
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="edu-block">
+        <p style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px">Education</p>
+        <h4>B.Sc. Sociology</h4>
+        <p>Landmark University, Kwara State · Class of 2016</p>
+        <div class="edu-tags">
+          <span class="etag">First-Class Honours</span>
+          <span class="etag">College Ambassador</span>
+          <span class="etag">Effective Leadership Award</span>
+        </div>
+      </div>
+      <div class="seek-block">
+        <div class="seek-label">Seeking roles in</div>
+        <div class="seek-pills">
+          <span class="sp">Business Development</span>
+          <span class="sp">Account Management</span>
+          <span class="sp">Customer Success</span>
+          <span class="sp">Relationship Management</span>
+          <span class="sp">Remote · Global</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 <span>Dolapo Temitope Olaosebikan</span> · Built for impact. Available worldwide.</p>
+  <div class="footer-links">
+    <a href="mailto:adedolapo.olaosebikan@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/dolapo-olaosebikan-51519a121" target="_blank">LinkedIn</a>
+    <a href="tel:+2347068096265">Phone</a>
+  </div>
+</footer>
+
+</body>
+</html>
